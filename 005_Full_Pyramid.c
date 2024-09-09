@@ -6,14 +6,11 @@ int main()
     printf("Enter the number of rows "); 
     scanf("%d",&num);
     cols = 2*num-1;
-    for (int i = 1 ; i <= num ; i++)
-    {
-        for (int j = 1 ; j <= (cols-i)/2 ; j++)
-        {
+    for (int i = 1; i <= num; i++) {
+        for (int j = i; j < num; j++) { // j = 1 
             printf(" ");
-        } 
-        for (int j = 1 ; j <= i ; j++)
-        {
+        }
+        for (int k = 1; k <= (2 * i - 1); k++) {
             printf("*");
         }
         printf("\n");
